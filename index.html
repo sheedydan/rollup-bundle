@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Webpack out put, ensure this value matches value of 
+    output.filename in webpack.config -->
+    <script src="bundle.js"></script>
+    <!--<script src="/dist/bundle.cfc80042661ee85e3f2f.js"></script>-->
+</head>
+
+<body>
+    <!-- AngularJS module binding target -->
+    <!-- ENSURE THAT THIS ID IS UNIQUE ACROSS ANY APPS THAT SHARE 
+    THE SAME ROOT 'window.document'  -->
+    <!-- This element and any child elements will need to be injected
+    into the target page (either script editor web part or page layout
+    file) -->
+    <div id="weatherAppContainer">
+        <!-- COMPONENT ELEMENT -->
+        <!-- The name of this element will be used to initialise 
+        the componed based value passed into the component constructor -->
+        <forecast></forecast>
+    </div>
+</body>
